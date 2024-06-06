@@ -14,6 +14,12 @@ local nmappings = {
 	{ from = "<down>",        to = ":res -5<CR>", },
 	{ from = "<left>",        to = ":vertical resize-5<CR>", },
 	{ from = "<right>",       to = ":vertical resize+5<CR>", },
+
+	-- nvim-tree
+	{ from = "<c-n>",         to = ":NvimTreeToggle<CR>", },
+	
+	-- copy all
+	{ from = "<c-b>",         to = "ggVG\"+yG", },
 }
 
 for _, mapping in ipairs(nmappings) do
@@ -28,3 +34,4 @@ vim.keymap.set('n', 'z<space>', function()    -- 在普通模式下，利用 z<s
     vim.cmd('normal zo')                   -- 如果开启，则展开当前区域
   end
 end, { noremap = true, silent = true })       -- 映射选项：不使用递归映射和静默执行
+
