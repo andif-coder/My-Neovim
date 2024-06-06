@@ -4,7 +4,7 @@ local mode_nv = { "n", "v" }
 local mode_v = { "v" }
 local mode_i = { "i" }
 local nmappings = {
-    -- useful
+	-- useful
 	{ from = "Y",             to = "\"+y",                                                                mode = mode_v },
 	{ from = "K",             to = "5k",                                                                  mode = mode_nv },
 	{ from = "J",             to = "5j",                                                                  mode = mode_nv },
