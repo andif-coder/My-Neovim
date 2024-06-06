@@ -5,7 +5,7 @@ return {
   run = ":TSUpdate", -- 安装后执行更新
   config = function()  -- Treesitter 的配置
     require('nvim-treesitter.configs').setup {
-      ensure_installed = {"cpp", "python", "c", "vim"}, -- 或指定语言列表 ["python", "lua", "javascript"]
+      ensure_installed = {"cpp", "python", "c", "vim", "lua"}, -- 或指定语言列表 ["python", "lua", "javascript"]
       highlight = {
         enable = true,
         additional_vim_regex_highlighting = false
