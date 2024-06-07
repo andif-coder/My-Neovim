@@ -15,6 +15,12 @@ local nmappings = {
 	{ from = "<left>",        to = ":vertical resize-5<CR>", },
 	{ from = "<right>",       to = ":vertical resize+5<CR>", },
 
+	-- tab
+	{ from = "<space>n",          to = ":tabp<CR>", },
+	{ from = "<space>m",          to = ":tabn<CR>", },
+	{ from = "<space>b",          to = ":tabo<CR>", },
+	{ from = "<space>c",          to = ":tabc<CR>", },
+
 	-- nvim-tree
 	{ from = "<c-n>",         to = ":NvimTreeToggle<CR>", },
 	
