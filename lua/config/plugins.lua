@@ -22,11 +22,13 @@ require("lazy").setup({
   require("config.plugins.nvim-web-devicons"),
   -- 目录树
   require("config.plugins.nvim-tree"),
-  -- 目录树
-  require("config.plugins.nvim-tree"),
+	-- 目录树
+	require("config.plugins.nvim-tree"),
 	-- mason
   require("config.plugins.nvim-mason"),
   require("config.plugins.nvim-mason-lspconfig"),
   require("config.plugins.nvim-lspconfig"),
+	-- git
+	require("config.plugins.nvim-git"),
 }, {})
 
