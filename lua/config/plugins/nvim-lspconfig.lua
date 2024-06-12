@@ -13,10 +13,20 @@ return {
     local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
     -- 配置每个必要的 LSP server
-    lspconfig.clangd.setup({ on_attach = on_attach, capabilities = capabilities })
+    lspconfig.clangd.setup({
+			cmd = {
+				"clangd",
+				"--query-driver=/opt/homebrew/Cellar/gcc/13.2.0/bin/g++-13",
+				"--fallback-style=llvm",
+				"--header-insertion=iwyu",
+			},
+			on_attach = on_attach,
+			capabilities = capabilities
+		})
     lspconfig.pyright.setup({ on_attach = on_attach, capabilities = capabilities })
     lspconfig.bashls.setup({ on_attach = on_attach, capabilities = capabilities })
     lspconfig.lua_ls.setup({ on_attach = on_attach, capabilities = capabilities })
     lspconfig.vimls.setup({ on_attach = on_attach, capabilities = capabilities })
   end
 }
+
