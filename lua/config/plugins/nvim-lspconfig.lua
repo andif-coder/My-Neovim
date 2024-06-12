@@ -20,8 +20,13 @@ return {
 			cmd = {
 				"clangd",
 				"--query-driver=/opt/homebrew/Cellar/gcc/13.2.0/bin/g++-13",
-				"--fallback-style=llvm",
 				"--header-insertion=iwyu",
+				"--background-index",
+				"--clang-tidy",
+				"--function-arg-placeholders",
+				"--fallback-style=llvm",
+				"--all-scopes-completion",
+				"--completion-style=detailed",
 			},
 			on_attach = on_attach,
 			capabilities = capabilities
