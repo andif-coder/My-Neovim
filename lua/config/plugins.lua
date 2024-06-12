@@ -32,5 +32,7 @@ require("lazy").setup({
 	require("config.plugins.nvim-git"),
 	-- 状态栏
 	require("config.plugins.nvim-statusline"),
+	-- 代码补全
+  require("config.plugins.nvim-autocomplete"),
 }, {})
 
