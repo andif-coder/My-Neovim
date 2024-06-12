@@ -1,6 +1,6 @@
 return {
   'neovim/nvim-lspconfig',
-  after = 'mason-lspconfig.nvim',  -- 确保在 mason-lspconfig 之后加载
+  after = 'nvim-mason-lspconfig',  -- 确保在 mason-lspconfig 之后加载
   config = function()
     local lspconfig = require('lspconfig')
     -- 定义通用的 on_attach 函数
@@ -14,6 +14,9 @@ return {
 
     -- 配置每个必要的 LSP server
     lspconfig.clangd.setup({
+			init_options = {
+				fallbackFlags = {'--std=c++20'}
+			},
 			cmd = {
 				"clangd",
 				"--query-driver=/opt/homebrew/Cellar/gcc/13.2.0/bin/g++-13",

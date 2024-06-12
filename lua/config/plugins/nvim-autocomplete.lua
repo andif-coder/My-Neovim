@@ -5,8 +5,8 @@ return {
 		"hrsh7th/cmp-buffer", -- 提供当前缓冲区（已打开文件）中文件的自动补全
 		"hrsh7th/cmp-nvim-lsp", -- 提供与LSP服务集成的自动补全功能。提供代码理解，错误检查，自动补全等功能
 		"hrsh7th/cmp-cmdline", -- 提供命令行模式下的自动补全功能
-  	"L3MON4D3/LuaSnip", -- LuaSnip 插件，用于代码片段
-  	"saadparwaiz1/cmp_luasnip", -- 集成LuaSnip到nvim-cm
+  	-- "L3MON4D3/LuaSnip", -- LuaSnip 插件，用于代码片段
+  	-- "saadparwaiz1/cmp_luasnip", -- 集成LuaSnip到nvim-cm
 	},
   config = function()
 		local cmp = require('cmp')
