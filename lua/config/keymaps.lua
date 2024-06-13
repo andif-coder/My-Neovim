@@ -8,24 +8,24 @@ local nmappings = {
 	{ from = "Y",             to = "\"+y",                                                                mode = mode_v },
 	{ from = "K",             to = "5k",                                                                  mode = mode_nv },
 	{ from = "J",             to = "5j",                                                                  mode = mode_nv },
-
 	-- Window & splits
 	{ from = "<up>",          to = ":res +5<CR>", },
 	{ from = "<down>",        to = ":res -5<CR>", },
 	{ from = "<left>",        to = ":vertical resize-5<CR>", },
 	{ from = "<right>",       to = ":vertical resize+5<CR>", },
-
 	-- tab
-	{ from = "<space>n",          to = ":tabp<CR>", },
-	{ from = "<space>m",          to = ":tabn<CR>", },
-	{ from = "<space>b",          to = ":tabo<CR>", },
-	{ from = "<space>c",          to = ":tabc<CR>", },
-
+	{ from = "<leader>n",          to = ":tabp<CR>", },
+	{ from = "<leader>m",          to = ":tabn<CR>", },
+	{ from = "<leader>b",          to = ":tabo<CR>", },
+	{ from = "<leader>c",          to = ":tabc<CR>", },
 	-- nvim-tree
 	{ from = "<c-n>",         to = ":NvimTreeToggle<CR>", },
-	
 	-- copy all
 	{ from = "<c-b>",         to = "ggVG\"+yG", },
+	-- Navigate errors in code
+	{ from = "<leader>j",         to = ":lua vim.diagnostic.goto_next()<CR>", },
+	{ from = "<leader>k",         to = ":lua vim.diagnostic.goto_prev()<CR>", },
+	
 }
 
 for _, mapping in ipairs(nmappings) do
