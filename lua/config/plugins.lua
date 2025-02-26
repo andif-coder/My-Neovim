@@ -12,8 +12,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
-  -- easymotion
+  -- 高亮匹配文档，并快速跳转
   require("config.plugins.flash"),
+  -- easymotion，快速跳转（跳转到单元，行，字母等）
+  require("config.plugins.hop"),
   -- 语法树
   require("config.plugins.nvim-treesitter"),
   -- 主题
@@ -22,8 +24,6 @@ require("lazy").setup({
   require("config.plugins.nvim-web-devicons"),
   -- 目录树
   require("config.plugins.nvim-tree"),
-	-- 目录树
-	require("config.plugins.nvim-tree"),
 	-- mason
   require("config.plugins.nvim-mason"),
   require("config.plugins.nvim-mason-lspconfig"),
