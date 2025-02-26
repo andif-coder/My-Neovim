@@ -17,7 +17,7 @@ local nmappings = {
 	{ from = "<leader>n",          to = ":tabp<CR>", },
 	{ from = "<leader>m",          to = ":tabn<CR>", },
 	{ from = "<leader>b",          to = ":tabo<CR>", },
-	{ from = "<leader>c",          to = ":tabc<CR>", },
+	{ from = "<leader>v",          to = ":tabc<CR>", },
 	-- nvim-tree
 	{ from = "<c-n>",         to = ":NvimTreeToggle<CR>", },
 	-- copy all
