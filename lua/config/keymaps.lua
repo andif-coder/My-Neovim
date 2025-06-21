@@ -51,7 +51,7 @@ local function compile_and_run_cpp()
   local output_file = vim.fn.shellescape(vim.fn.expand('%<'))
 
   -- 3. 构建命令字符串
-  local cmd = string.format('g++-14 -std=c++20 -Wall %s -o %s && ./%s', source_file, output_file, output_file)
+  local cmd = string.format('g++-14 -std=c++20 -Wall %s -o %s && time ./%s', source_file, output_file, output_file)
 
   -- 4. 在新的垂直分屏中打开终端并执行
   vim.cmd('vsplit')
