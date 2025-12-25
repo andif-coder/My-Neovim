@@ -34,5 +34,7 @@ require("lazy").setup({
 	require("config.plugins.nvim-statusline"),
 	-- 代码补全
   require("config.plugins.nvim-autocomplete"),
+	-- Markdown显示
+  require("config.plugins.markdown-preview"),
 }, {})
 
