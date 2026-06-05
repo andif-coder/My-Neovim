@@ -30,5 +30,8 @@ return {
     picker = {
       name = "snacks.picker",
     },
+		-- 设置新笔记的默认路径
+		notes_subdir = "000_Inbox",
+		new_notes_location = "notes_subdir",
   },
 }
