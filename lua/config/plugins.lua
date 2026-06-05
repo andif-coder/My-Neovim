@@ -36,5 +36,7 @@ require("lazy").setup({
   require("config.plugins.nvim-autocomplete"),
 	-- Markdown显示
   require("config.plugins.markdown-preview"),
+	-- 笔记:obsidian
+	require("config.plugins.nvim-obsidian"),
 }, {})
 

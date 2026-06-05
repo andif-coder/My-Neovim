@@ -3,6 +3,8 @@
 1. 如果没有~/.config文件，则建立一个~/.config文件
 2. cd ~/.config
 3. git clone git@github.com:andif-coder/My-Neovim.git nvim
+## 插件检查
+随便用neovim打开一个文件，然后:checkhealth xxx，其中xxx是你要检查的插件名字
 
 # 插件
 ## hop
@@ -13,3 +15,6 @@
 ## markdown preview
 用来预览.md文件，主要的功能：
 1. 通过浏览器预览当前的md文件: ":MarkdownPreview"
+## Obsidian
+obsidian笔记插件
+1. 搜索匹配某些文本的笔记，对应快捷键:Obsidian search
