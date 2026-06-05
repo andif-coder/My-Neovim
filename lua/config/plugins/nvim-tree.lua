@@ -133,10 +133,6 @@ return {
         },
         exclude = false,
       },
-      system_open = {
-        cmd = "",
-        args = {},
-      },
       git = {
         enable = true,
         show_on_dirs = true,

@@ -16,5 +16,23 @@
 用来预览.md文件，主要的功能：
 1. 通过浏览器预览当前的md文件: ":MarkdownPreview"
 ## Obsidian
+### 前置条件
+需要安装rg，可以通过`brew install ripgrep`
+### 操作
 obsidian笔记插件
-1. 搜索匹配某些文本的笔记，对应快捷键:Obsidian search
+1. 搜索匹配某些文本的笔记，对应快捷键:":Obsidian search"
+## git插件
+主要有两个插件：
+1. gitsign主要用来快速看到改动
+2. lazygit用来提交代码
+### 前置条件
+需要安装了lazygit，可以通过`brew install lazygit`
+### gitsign操作
+1. 跳到上一个修改块, 对应快捷键:"<leader>g-"
+2. 跳到下一个修改块, 对应快捷键:"<leader>g="
+3. 查看当前代码块的修改，对应快捷键："H"
+4. 查看当前行的历史，对应快捷键:"<leader>gb"
+5. 回退当前代码块的修改（回退到前一次commit的版本）, 对应快捷键:"<leader>gr"
+### lazygit操作
+1. 唤起lazygit，对应快捷键:"crtl + g"
+2. 退出lazygit，对应快捷键:"q"
