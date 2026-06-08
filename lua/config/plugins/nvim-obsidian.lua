@@ -21,14 +21,14 @@ return {
     },
     -- 指定你的附件集散地（对应你的 900 Assets）
     attachments = {
-      folder = "900_Assets",
+      folder = "900-Assets",
     },
     -- 配置内置 Picker（推荐使用 telescope、fzf-lua 或 snacks.picker）
     picker = {
       name = "snacks.picker",
     },
 		-- 设置新笔记的默认路径
-		notes_subdir = "000_Inbox",
+		notes_subdir = "000-Inbox",
 		new_notes_location = "notes_subdir",
 		-- 彻底干掉随机长数字（Zettelkasten ID），让文件名 100% 等于你的标题
     note_id_func = function(title)
