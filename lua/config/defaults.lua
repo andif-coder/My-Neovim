@@ -18,6 +18,8 @@ vim.wo.foldlevel = 1 -- 当前缓冲区设置
 vim.wo.foldmethod = 'expr'             -- 设置折叠方法为基于自定义
 vim.wo.foldexpr = 'nvim_treesitter#foldexpr()' -- 折叠方法用treesitter
 vim.o.foldenable = true                 -- 启用代码折叠
+vim.o.relativenumber = true -- 开启相对行号（在其他行显示距离当前行的行数，方便极速跳转）
+
 
 -- makes * and # work on visual mode too.
 vim.api.nvim_exec(
