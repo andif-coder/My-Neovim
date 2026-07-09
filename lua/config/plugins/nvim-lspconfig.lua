@@ -43,7 +43,7 @@ return {
             -- 开启 clang-tidy 静态检查
             "--clang-tidy",
             -- 补全函数时显示参数占位符
-            "--function-arg-placeholders",
+            "--function-arg-placeholders=1",
             -- 如果没有格式化配置，回退到 LLVM 风格
             "--fallback-style=llvm",
             -- 开启全作用域补全
