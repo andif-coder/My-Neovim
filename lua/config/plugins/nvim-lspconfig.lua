@@ -73,5 +73,24 @@ return {
     -- (4) VimScript (Vim Language Server)
     vim.lsp.config.vimls = { on_attach = on_attach, capabilities = capabilities }
     vim.lsp.enable("vimls")
+		-----------------------------------------------------------
+    -- 5. 配置前端 Web 全栈 Server
+    -----------------------------------------------------------
+    -- (1) TypeScript / JavaScript / JSX / TSX
+    -- 注意：最近 nvim-lspconfig 把前端 LSP 的名字从 tsserver 改成了 ts_ls
+    vim.lsp.config.ts_ls = { on_attach = on_attach, capabilities = capabilities }
+    vim.lsp.enable("ts_ls")
+
+    -- (2) HTML
+    vim.lsp.config.html = { on_attach = on_attach, capabilities = capabilities }
+    vim.lsp.enable("html")
+
+    -- (3) CSS
+    vim.lsp.config.cssls = { on_attach = on_attach, capabilities = capabilities }
+    vim.lsp.enable("cssls")
+
+    -- (4) JSON
+    vim.lsp.config.jsonls = { on_attach = on_attach, capabilities = capabilities }
+    vim.lsp.enable("jsonls")
   end
 }
