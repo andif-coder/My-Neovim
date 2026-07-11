@@ -1,12 +1,14 @@
 # My-Neovim
-## 使用指南
+## 安装指南
 1. 如果没有~/.config文件，则建立一个~/.config文件
 2. cd ~/.config
 3. git clone git@github.com:andif-coder/My-Neovim.git nvim
+## nvim自带快捷键
+`[d`: 跳转到上一个编译报错的地方
+`]d`: 跳转到下一个编译报错的地方
+# 插件
 ## 插件检查
 随便用neovim打开一个文件，然后:checkhealth xxx，其中xxx是你要检查的插件名字
-
-# 插件
 ## hop
 用于跳转，主要的功能:
 1. 跳转到单词，对应的快捷键: "\<leader\>w"
