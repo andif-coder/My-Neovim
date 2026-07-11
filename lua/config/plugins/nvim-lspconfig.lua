@@ -77,10 +77,11 @@ return {
     -- 5. 配置前端 Web 全栈 Server
     -----------------------------------------------------------
     -- (1) TypeScript / JavaScript / JSX / TSX
-    -- 注意：最近 nvim-lspconfig 把前端 LSP 的名字从 tsserver 改成了 ts_ls
-    vim.lsp.config.ts_ls = { on_attach = on_attach, capabilities = capabilities }
-    vim.lsp.enable("ts_ls")
-
+		vim.lsp.config.vtsls = {
+			on_attach = on_attach,
+			capabilities = capabilities,
+		}
+		vim.lsp.enable("vtsls")
     -- (2) HTML
     vim.lsp.config.html = { on_attach = on_attach, capabilities = capabilities }
     vim.lsp.enable("html")
