@@ -4,7 +4,7 @@ return {
   event = "BufRead", -- 触发插件加载的事件
   run = ":TSUpdate", -- 安装后执行更新
   config = function()  -- Treesitter 的配置
-    require('nvim-treesitter.configs').setup {
+    require('nvim-treesitter').setup {
       ensure_installed = {"cpp", "python", "c", "vim", "lua", "tsx", "css", "html", "json", "javascript", "typescript"}, -- 或指定语言列表 ["python", "lua", "javascript"]
       highlight = {
         enable = true,
