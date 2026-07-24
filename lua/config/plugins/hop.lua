@@ -1,8 +1,7 @@
 return {
   -- 其他插件
   {
-    "phaazon/hop.nvim",
-    branch = "v2", -- 可选，指定分支
+    "smoka7/hop.nvim",
     keys = {
       { "<leader>w", "<cmd>HopWord<CR>", desc = "Hop to Word" },
       { "<leader>l", "<cmd>HopLine<CR>", desc = "Hop to Line" },
