@@ -64,4 +64,5 @@ vim.keymap.set('n', '<F9>', compile_and_run_cpp, {
   silent = true,
   desc = "Compile and run C++ file"
 })
-
+-- Normal 模式下按 gl 查看当前行错误
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float, { desc = 'Show line diagnostics' })
